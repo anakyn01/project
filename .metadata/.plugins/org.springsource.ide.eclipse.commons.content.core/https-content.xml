@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<descriptors>
+    <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" requiresbundle="org.eclipse.m2e.core" size="0" version="3.2.2">
+        <description>A new Spring MVC web application development project</description>
+    </descriptor>
+    <descriptor category="GemFire" id="org.springframework.data.gemfire.template.standalone" kind="template" local="false" name="Spring Data GemFire Project (Standalone)" requires="[3.0.0,4.0)" size="7467" url="https://github.com/MollangPiu/downLoad/raw/main/spring/gemfire-standalone-sts-template-1.0.1.RELEASE.zip" version="1.0.1.RELEASE">
+        <description>Creates a Spring Data GemFire project with an embedded cache and one region that runs as a standalone Java application.</description>
+    </descriptor>
+    <descriptor category="GemFire" id="org.springframework.data.gemfire.template.server.standalone" kind="template" local="false" name="Spring Data GemFire Cache Server Project (Standalone)" requires="[3.0.0,4.0)" size="7582" url="https://github.com/MollangPiu/downLoad/raw/main/spring/gemfire-server-sts-template-1.0.1.RELEASE.zip" version="1.0.1.RELEASE">
+        <description>Creates a GemFire Cache Server project with a cache server, embedded cache and one region that runs as a standalone Java application.</description>
+    </descriptor>
+    <descriptor category="GemFire" id="org.springframework.data.gemfire.template.server.war" kind="template" local="false" name="Spring Data GemFire Cache Server Project (WAR)" requires="[3.0.0,4.0)" size="7543" url="https://github.com/MollangPiu/downLoad/raw/main/spring/gemfire-server-war-sts-template-1.0.1.RELEASE.zip" version="1.0.1.RELEASE">
+        <description>Creates a GemFire Cache Server project with a cache server, embedded cache and one region that runs as a web application.</description>
+    </descriptor>
+    <descriptor category="GemFire" id="org.springframework.data.gemfire.template.client" kind="template" local="false" name="Spring Data GemFire Client Project" requires="[3.0.0,4.0)" size="7881" url="https://github.com/MollangPiu/downLoad/raw/main/spring/gemfire-client-sts-template-1.0.1.RELEASE.zip" version="1.0.1.RELEASE">
+        <description>Creates a Spring Data GemFire project with a client cache and client region that runs as a standalone Java application.</description>
+    </descriptor>
+    <descriptor id="org.springframework.templates.mvc" kind="template" local="false" name="Spring MVC Project" requires="2.8.0" requiresbundle="org.eclipse.m2e.core" size="16608" url="https://github.com/MollangPiu/downLoad/raw/main/spring/org.springframework.templates.mvc-3.2.2.zip" version="3.2.2">
+        <description>A new Spring MVC web application development project</description>
+    </descriptor>
+    <descriptor category="Integration" id="org.springframework.integration.sts.template.standalone.simple" kind="template" local="false" name="Spring Integration Project (Standalone) - Simple" requires="[3.0.0,4.0)" requiresbundle="org.eclipse.m2e.core" size="9500" url="https://github.com/MollangPiu/downLoad/raw/main/spring/si-template-standalone-simple-1.0.1.RELEASE.zip" version="1.0.1.RELEASE">
+        <description>Creates a Spring Integration project that runs as a standalone Java application using core components only.</description>
+    </descriptor>
+    <descriptor category="Integration" id="org.springframework.integration.sts.template.standalone" kind="template" local="false" name="Spring Integration Project (Standalone) - File" requires="[3.0.0,4.0)" requiresbundle="org.eclipse.m2e.core" size="12100" url="https://github.com/MollangPiu/downLoad/raw/main/spring/si-template-standalone-1.0.1.RELEASE.zip" version="1.0.1.RELEASE">
+        <description>Creates a Spring Integration project that runs as a standalone Java application using file polling and file output.</description>
+    </descriptor>
+    <descriptor category="Integration" id="org.springframework.integration.sts.template.war" kind="template" local="false" name="Spring Integration Project (War)" requires="[3.0.0,4.0)" requiresbundle="org.eclipse.m2e.core" size="155900" url="https://github.com/MollangPiu/downLoad/raw/main/spring/si-template-war-1.0.1.RELEASE.zip" version="1.0.1.RELEASE">
+        <description>Creates a Spring Integration project that runs within a servlet container. Uses the Spring Integration Twitter adapter.</description>
+    </descriptor>
+    <descriptor category="Integration" id="org.springframework.integration.sts.template.adapter" kind="template" local="false" name="Spring Integration Adapter Template Project" requires="[3.2.0,4.0)" requiresbundle="org.springsource.ide.eclipse.gradle.core" size="122100" url="https://github.com/MollangPiu/downLoad/raw/main/spring/si-template-adapter-1.0.1.RELEASE.zip" version="1.0.1.RELEASE">
+        <description>Creates a Spring Integration Adapter Template. Requires Gradle Support.</description>
+    </descriptor>
+    <descriptor category="Integration" id="org.springframework.integration.sts.template.adapter" kind="template" local="false" name="Spring Integration Adapter Template Project" requires="[3.0.0,3.2)" size="118119" url="https://github.com/MollangPiu/downLoad/raw/main/spring/si-template-adapter-1.0.0.M4.zip" version="1.0.0.M4">
+        <description>Creates a Spring Integration Adapter Template. Requires Gradle Support. Deprecated, please update STS to version 3.2+ for the latest template version</description>
+    </descriptor>
+    <descriptor id="org.springframework.integration.sts.template.standalone.simple" kind="template" local="false" name="Spring Integration Project (Standalone) - Simple" requires="[0.0.0,3.0.0)" size="8390" url="https://github.com/MollangPiu/downLoad/raw/main/spring/si-template-standalone-simple-1.0.0.M2.zip" version="1.0.0.M2">
+        <description>Creates a Spring Integration project that runs as a standalone Java application using core components only. Deprecated, please update STS to version 3.2+ for the latest template version</description>
+    </descriptor>
+    <descriptor id="org.springframework.integration.sts.template.standalone" kind="template" local="false" name="Spring Integration Project (Standalone) - File" requires="[0.0.0,3.0.0)" size="10258" url="https://github.com/MollangPiu/downLoad/raw/main/spring/si-template-standalone-1.0.0.M2.zip" version="1.0.0.M2">
+        <description>Creates a Spring Integration project that runs as a standalone Java application using file polling and file output. Deprecated, please update STS to version 3.2+ for the latest template version</description>
+    </descriptor>
+    <descriptor id="org.springframework.integration.sts.template.war" kind="template" local="false" name="Spring Integration Project (War)" requires="[0.0.0,3.0.0)" size="56242" url="https://github.com/MollangPiu/downLoad/raw/main/spring/si-template-war-1.0.0.M2.zip" version="1.0.0.M2">
+        <description>Creates a Spring Integration project that runs within a servlet container. Uses the Spring Integration Twitter adapter. Deprecated, please update STS to version 3.2+ for the latest template version</description>
+    </descriptor>
+    <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" requiresbundle="org.eclipse.m2e.core" size="0" version="3.2.2">
+        <description>A new Spring MVC web application development project</description>
+    </descriptor>
+    <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" requiresbundle="org.eclipse.m2e.core" size="0" version="3.2.2">
+        <description>A new Spring MVC web application development project</description>
+    </descriptor>
+    <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" requiresbundle="org.eclipse.m2e.core" size="0" version="3.2.2">
+        <description>A new Spring MVC web application development project</description>
+    </descriptor>
+    <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" requiresbundle="org.eclipse.m2e.core" size="0" version="3.2.2">
+        <description>A new Spring MVC web application development project</description>
+    </descriptor>
+    <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" requiresbundle="org.eclipse.m2e.core" size="0" version="3.2.2">
+        <description>A new Spring MVC web application development project</description>
+    </descriptor>
+</descriptors>

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+.w-10{width:10% !important;}
+.w-90{width:90% !important;}
+.h-90{
+width:100%;
+height:90px !important;
+}
+.h100{
+width:100%;
+height:100px;
+}
+
+/*배경색*/
+.bg-gradient-primary{
+height:910px;
+background-color:#4e73df;
+background-size:cover;
+background-image:linear-gradient(180deg,#4e73df 10%, #224abe 100%);	
+/*background-repeat:no-repeat;*/
+}
+
+.o-hidden{
+overflow:hidden !important;
+}
+
+.bg-login-image{
+	background: url(https://source.unsplash.com/K4mSJ7kc0As/600x800);
+	background-position:center;
+	background-size: cover;
+}
+.text-gray-900{
+	color:#3a3b45 !important;
+}
+.form-control-user{
+font-size:.8rem; border-radius:10rem; padding:1.5rem 1rem;
+}
+.custom-control{
+position:relative; z-index:1; display:block; min-height:1.5rem; 
+}
+.small{
+font-size:80%; font-weight:400;	
+}
+.btn-user{
+font-size:.8rem; border-radius:10rem; padding:.75rem 1rem;	
+}
+.btn-google{
+color:#fff; background-color: #ea4335;	
+border-color:#fff;
+}
+.btn-kakao{
+color:black; background-color: #fee500;	
+border-color:#fee500;
+}
+.btn-facebook{
+color:#fff; background-color: #3b5998; border-color:#fff;
+}
+.btn-block{
+display:block; width:100%;	
+}
+.bg-register-image{
+    background: url(https://source.unsplash.com/Mv9hjnEUHR4/600x800);
+    background-position: center;
+    background-size: cover;
+}
+.h-600{
+height:600px !important;	
+}
+
+a{text-decoration: none;}
+
+.w250{
+width:250px;overflow:hidden;
+}
+.wide-img{
+width:250px !important;  height:141px !important;
+}
+.eli{
+	width:190px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.ci > input[type=text]{
+	width:130px !important; box-sizing:border-box; border:2px solid #ccc;
+	border-radius:4px; font-size:16px; background-color:white;
+	padding:12px 20px 12px 40px;
+	-webkit-transition:width 0.6s ease-in-out;
+	transition:width 0.6s ease-in-out;
+	background-image:url(../img/mag.png);
+	background-position:10px 10px;
+	background-repeat:no-repeat;
+}
+
+.ci > input[type=text]:focus{
+width:100% !important;
+}
+
+/*중복아이디 존재*/
+/* 중복아이디 존재하지 않는경우 */
+.id_input_re_1{
+	color : green;
+	display : none;
+}
+/* 중복아이디 존재하는 경우 */
+.id_input_re_2{
+	color : red;
+	display : none;
+}
+
+/*mailcheck*/
+#mail_check_input_box_false{
+    background-color:#ebebe4;
+}
+ 
+#mail_check_input_box_true{
+    background-color:white;
+}
+
+.correct{
+    color : green;
+}
+.incorrect{
+    color : red;
+}
+
+
+/*border-radius*/
+.br20{
+border-radius:20px !important;	
+}
+.border-radius-top-right-sm{
+border-top-right-radius:20px;
+border-bottom-right-radius:20px;
+}
+
+/* 유효성 검사 문구 */
+ 
+.final_id_ck{
+    display: none;
+}
+.final_pw_ck{
+    display: none;
+}
+.final_pwck_ck{
+    display: none;
+}
+.final_name_ck{
+    display: none;
+}
+.final_mail_ck{
+    display: none;
+}
+.final_addr_ck{
+    display: none;
+}
+
+
+
+
+

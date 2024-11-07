@@ -1,0 +1,13 @@
+package com.facebook.react.service;
+
+import java.util.Map;
+
+public class ReactServiceImpl implements ReactService {
+
+	@Override
+	public int create(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

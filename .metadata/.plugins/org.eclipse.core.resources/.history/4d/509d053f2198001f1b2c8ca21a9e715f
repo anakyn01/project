@@ -1,0 +1,36 @@
+<jsp:include page="../include/header.jsp" flush="false"/>
+
+<div id="mydiv"></div>
+
+<script type="text/babel">
+
+
+function App() {
+return (
+<form method="post">
+<div class="input-group my-3">
+<label class="form-label">
+컨텐츠 제목 :
+</label>
+<input type="text" name="title" class="form-control"/>
+</div>
+
+<div class="input-group my-3">
+<label class="form-label">
+컨텐츠 제목 :
+</label>
+<input type="text" name="title" class="form-control"/>
+</div>
+
+
+
+</form>
+);
+}
+
+
+const root = ReactDOM.createRoot(document.getElementById('mydiv'));
+root.render(<App/>)
+</script>
+
+<jsp:include page="../include/footer.jsp" flush="false"/>

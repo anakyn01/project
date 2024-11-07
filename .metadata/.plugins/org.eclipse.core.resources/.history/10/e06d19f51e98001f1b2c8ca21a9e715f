@@ -1,0 +1,5 @@
+package com.facebook.react.service;
+
+public interface ReactService {
+int create(Map <String, Object> map);
+}

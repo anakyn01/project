@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring.mvc.blog.mapper.BlogMapper"><!--네임스페이스는 데이터베이스에서 사용할 테이블-->
+<delete id="delete" parameterType="java.lang.Integer">
+<![CDATA[
+DELETE FROM TB_BLG_CONT WHERE BLG_CONT_SEQ = #{BLG_CONT_SEQ}
+]]>
+</delete>
+<resultMap type="spring.mvc.blog.vo.BlogListResponseVO" id="selectListResultMap">
+<result column="BLG_CONT_SEQ" property="blgContSeq" jdbcType="INTEGER" javaType="int"/>
+<result column="TITLE" property="title" jdbcType="NVARCHAR" javaType="String"/>
+<result column="CONT_BDY" property="contBdy" jdbcType="NVARCHAR" javaType="String"/>
+<result column="INSERT_DT" property="insertDt" jdbcType="TIMESTAMP" javaType="java.time.LocalDateTime"/>
+</resultMap>
+<select id="selectList" parameterType="spring.mvc.blog.vo.BlogListRequestVO" resultMap="selectListResultMap">
+<![CDATA[
+SELECT BLG_CONT_SEQ, TITLE, TO_CHAR(CONT_BDY) as CONT_BDY, INSERT_DT from TB_BLG_CONT WHERE 1= 1
+]]><!-- 관습적인 구문 1=1 참이다 때문에 데이터에 따라 추가 조건이 붙을수도 잇고 붙지 않을수도 있는 경우에 사용됩니다 -->
+<if test="search != null"><!-- 마이바티스 조건이 들어가면 다이나믹 쿼리-->
+AND (TITLE LIKE '%' || #{search} || '%' OR CONT_BDY LIKE '%' || #{search} || '%')
+</if><!-- 조건이 2개 이상일 경우 처음에 시작하는 조건은 where로 시작하고 두번째로 시작하는 조건은 and혹은 or등 연결 논리 연산자 여야 합니다 -->
+</select>
+</mapper>
+<!-- 
+property : 자바의 맴버변수명 (혹은 맵의 키)입니다
+jdbcType : JDBC의 타입입니다 각데이터베이스 벤더별로 열 타입에 해당하는 JDBC타입이 따로 정의되어 있습니다
+javaType : 자바의 타입
+마이바티스에서 목록을 반환하는지 아니면 객체를 반환하는지는 매퍼 xml이 아니라  sqlSessionTemplate의 메소드가 결정합니다
+column : 데이터베이스의 열 이름 입니다
+-->

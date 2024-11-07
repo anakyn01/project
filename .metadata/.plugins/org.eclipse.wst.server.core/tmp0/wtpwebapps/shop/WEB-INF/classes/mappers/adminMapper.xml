@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.md.shop.mappers.adminMapper">
+<select id="category" resultType="com.md.shop.domain.CategoryVO">
+<![CDATA[
+select level, cateName, cateCode, cateCodeRef 
+from goods_category
+start with cateCodeRef is null connect by prior cateCode = cateCodeRef
+]]><!-- connect by prior 부모자식관계를 지정[5라클 만 가진 기능중 하나 -->
+</select>
+</mapper>

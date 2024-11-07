@@ -1,0 +1,6 @@
+package com.md.shop.controller;
+
+@Controller
+public class ShopController {
+
+}

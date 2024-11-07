@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="TB_BLG_CONT">
+<insert id="insert" parameterType="hashMap">
+<selectKey keyProperty="seq_blg_cont" resultType="java.lang.Integer" order="BEFORE">
+select SEQ_BLG_CONT.NEXTVAL from dual
+</selectKey>
+<![CDATA[
+insert into TB_BLG_CONT (BLG_CONT_SEQ, TITLE, CONT_BDY)
+values
+(#{seq_blg_cont}, #{title}, #{content_body})
+]]>
+</insert>
+</mapper>

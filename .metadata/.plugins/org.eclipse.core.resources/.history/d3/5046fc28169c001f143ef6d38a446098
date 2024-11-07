@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter, user.UserDAO" %>
+<% request.setCharacterEncoding("utf-8"); %>
+<jsp:useBean id="user" class="user.Usr" scope="page"/>
+<jsp:setProperty property="userID" name="user"/>
+<jsp:setProperty property="userPassword" name="user"/>
+<%--세션 : 현재 접속한 한명의 회원에게 할당되는 고유한 ID --%>
+<%
+//현재 세션 상태를 체크한다
+String userID = null; //초기화
+if(session.getAttribute("userID") != null){
+	userID = (String)session.getAttribute("userID");
+	//만약 로그인한 아이디가 존재 한다면 userID는 세션을 부여 받는다
+}
+
+%>
+

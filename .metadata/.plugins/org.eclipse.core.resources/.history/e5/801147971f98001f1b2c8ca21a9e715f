@@ -1,0 +1,24 @@
+package com.facebook.react.service;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.facebook.react.dao.ReactDAO;
+
+public class ReactServiceImpl implements ReactService {
+	
+	private ReactDAO reactDAO;
+	
+	@Autowired
+	public ReactServiceImpl(ReactDAO reactDAO) {
+		this.reactDAO = reactDAO;
+	}
+
+	@Override
+	public int create(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

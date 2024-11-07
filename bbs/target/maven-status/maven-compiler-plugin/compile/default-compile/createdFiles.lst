@@ -1,0 +1,4 @@
+com\hbk\bbs\dao\BookDao.class
+com\hbk\bbs\controller\BbsController.class
+com\hbk\bbs\impl\BookServiceImpl.class
+com\hbk\bbs\service\BookService.class

@@ -1,0 +1,17 @@
+package com.facebook.react.service;
+
+import java.util.Map;
+
+import com.facebook.react.dao.ReactDAO;
+
+public class ReactServiceImpl implements ReactService {
+	
+	private ReactDAO reactDAO;
+
+	@Override
+	public int create(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

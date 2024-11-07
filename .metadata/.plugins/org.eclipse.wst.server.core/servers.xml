@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="6">
+    <list key="modules" value0="books::org.eclipse.jst.jee.server:books::jst.web::4.0" value1="pagenation::org.eclipse.jst.jee.server:pagenation::jst.web::4.0" value2="shop::org.eclipse.jst.jee.server:shop::jst.web::4.0" value3="react::org.eclipse.jst.jee.server:react::jst.web::2.5" value4="bbs::org.eclipse.jst.jee.server:bbs::jst.web::2.5" value5="procedure::org.eclipse.jst.jee.server:procedure::jst.web::2.5"/>
+  </server>
+</servers>

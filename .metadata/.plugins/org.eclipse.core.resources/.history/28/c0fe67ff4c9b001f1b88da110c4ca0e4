@@ -1,0 +1,39 @@
+package user;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class UserDAO {
+
+	private Connection conn;//자바와 데이터 베이스 [연결]
+	private PreparedStatement pstmt;//퀴리문 대기 및 [설정 및 실행]
+	private ResultSet rs;//[결과값] 받아오기
+	
+	//기본 생성자
+	public UserDAO() {
+		try {
+			String dbURL = "jdbc:oracle:thin:@localhost:1521/xe";
+			String dbID = "TEST_USER";
+			String dbPassword = "1234";
+			Class.forName("oracle.jdbc.OracleDriver");
+			//ojdbc연결 클래스를 String타입으로 불러옵니다
+			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	//로그인 구현영역 성공실패를 뭘로 구분하냐면 숫자로 구분 
+	//로그인 성공(1) 패스워드틀림(0), 아이디 없음(-1), -2(오류)
+	public int login(String userID, String userPassword) {
+		String sql = "select userPassword from usr where userID = ?";
+	}
+	
+	
+	
+	
+	
+	
+}

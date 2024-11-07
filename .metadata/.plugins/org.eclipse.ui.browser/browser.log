@@ -1,0 +1,69 @@
+
+10월 30, 2024 15:46:08.202 NEW SESSION
+10월 30, 2024 15:46:08.202 [10724:20740:1030/154608.199:ERROR:device_event_log_impl.cc(201)] [15:46:08.199] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 30, 2024 15:46:08.310 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 30, 2024 15:46:08.545 [10724:1052:1030/154608.545:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 15:46:38.53 [11516:7432:1030/154638.053:ERROR:device_event_log_impl.cc(201)] [15:46:38.050] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 30, 2024 15:46:38.143 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 30, 2024 15:46:38.216 [11516:2008:1030/154638.216:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 15:47:01.231 [11516:2008:1030/154701.231:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 15:50:32.384 [8464:22420:1030/155032.384:ERROR:device_event_log_impl.cc(201)] [15:50:32.384] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 30, 2024 15:50:32.461 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 30, 2024 15:50:32.551 [8464:12616:1030/155032.550:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 15:51:30.33 [16516:6000:1030/155130.033:ERROR:device_event_log_impl.cc(201)] [15:51:30.032] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 30, 2024 15:51:30.130 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 30, 2024 15:51:30.201 [16516:7824:1030/155130.201:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 15:51:58.551 [16516:7824:1030/155158.550:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 15:52:50.689 [16516:7824:1030/155250.688:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 15:55:50.987 [14088:13912:1030/155550.986:ERROR:device_event_log_impl.cc(201)] [15:55:50.985] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 30, 2024 15:55:51.73 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 30, 2024 15:55:51.164 [14088:1496:1030/155551.164:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 16:00:23.742 [8144:12252:1030/160023.741:ERROR:device_event_log_impl.cc(201)] [16:00:23.737] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 30, 2024 16:00:23.856 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 30, 2024 16:00:23.912 [8144:19784:1030/160023.911:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 30, 2024 16:00:46.451 [8144:19784:1030/160046.451:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+
+10월 30, 2024 16:05:19.113 NEW SESSION
+10월 30, 2024 16:05:19.113 [22468:4420:1030/160519.110:ERROR:device_event_log_impl.cc(201)] [16:05:19.108] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 30, 2024 16:05:19.217 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 30, 2024 16:05:19.280 [22468:22040:1030/160519.279:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+
+10월 31, 2024 14:06:08.513 NEW SESSION
+10월 31, 2024 14:06:08.513 [13924:15532:1031/140608.511:ERROR:device_event_log_impl.cc(201)] [14:06:08.512] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 31, 2024 14:06:08.619 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 31, 2024 14:06:08.692 [13924:13156:1031/140608.692:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:06:38.744 [13924:13156:1031/140638.744:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:12:11.130 [18332:12564:1031/141211.130:ERROR:device_event_log_impl.cc(201)] [14:12:11.129] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 31, 2024 14:12:11.233 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 31, 2024 14:12:11.301 [18332:12680:1031/141211.301:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:12:34.774 [18332:12680:1031/141234.773:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:13:27.166 [18332:12680:1031/141327.166:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:15:01.432 [18332:12680:1031/141501.432:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:18:46.94 [18332:12680:1031/141846.094:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:22:29.769 [21476:21640:1031/142229.769:ERROR:device_event_log_impl.cc(201)] [14:22:29.769] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 31, 2024 14:22:29.871 Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 31, 2024 14:22:29.943 [21476:14200:1031/142229.943:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:22:51.71 [21476:14200:1031/142251.070:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:23:50.586 [21476:14200:1031/142350.585:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:25:38.580 [21476:14200:1031/142538.580:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+10월 31, 2024 14:28:25.204 [21476:14200:1031/142825.204:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+
+11월 04, 2024 16:49:23.157 NEW SESSION
+11월 04, 2024 16:49:23.157 [17616:12068:1104/164923.155:ERROR:device_event_log_impl.cc(201)] [16:49:23.156] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+11월 04, 2024 16:49:23.264 Created TensorFlow Lite XNNPACK delegate for CPU.
+11월 04, 2024 16:49:23.337 [17616:10192:1104/164923.337:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 16:49:47.532 [17616:10192:1104/164947.531:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 16:50:43.181 [17616:10192:1104/165043.181:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 16:52:04.650 [17616:10192:1104/165204.650:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 16:55:04.491 [17616:10192:1104/165504.491:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 16:59:28.841 [22520:11536:1104/165928.841:ERROR:device_event_log_impl.cc(201)] [16:59:28.841] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+11월 04, 2024 16:59:28.933 Created TensorFlow Lite XNNPACK delegate for CPU.
+11월 04, 2024 16:59:29.04 [22520:13300:1104/165929.004:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 16:59:39.265 [20876:15040:1104/165939.265:ERROR:device_event_log_impl.cc(201)] [16:59:39.265] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+11월 04, 2024 16:59:39.408 Created TensorFlow Lite XNNPACK delegate for CPU.
+11월 04, 2024 16:59:39.438 [20876:13176:1104/165939.438:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 17:00:04.149 [20876:13176:1104/170004.149:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 17:01:01.618 [20876:13176:1104/170101.618:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 17:02:30.697 [20876:13176:1104/170230.697:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 17:05:21.103 [20876:13176:1104/170521.103:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+11월 04, 2024 17:11:47.394 [20876:13176:1104/171147.394:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT

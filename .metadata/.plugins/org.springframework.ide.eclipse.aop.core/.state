@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="blog"/>
+<aop-project name="books"/>
+<aop-project name="pagenation"/>
+<aop-project name="bbs"/>
+<aop-project name="shop"/>
+<aop-project name="react"/>
+</aop-reference-model>

@@ -44,11 +44,31 @@ app.get("/list", (req, res) => {
 
 //read
 app.post("/detail", (req, res) => {
+//1.클라이언트로 부터 'id{1,2,3}'값을 요청 본문에서 가져옵니다
     const id = req.body.id;
-
+//2) 주어진 id에 해당하는 게시글 정보를 조회합니다
 const sqlQuery =
 "SELECT BOARD_ID, BOARD_TITLE, BOARD_CONTENT FROM BOARD WHERE BOARD_ID = ?;";
+//3)db.query를 사용하여 mysql데이터베이스에 쿼리를 실행합니다
+db.query(sqlQuery,(err, result) => {
+//4)쿼리 실행후에 에러가 발생하면 적절히 처리하거나 결과를 클라이언트에게 응답으로 보냅니다
+res.send(result)    
 })
+})
+
+//글쓰기
+app.post("/insert",(req, res) => {
+    const title = req.body.title;//새로운 글을 쓰는데 숫자가 자동으로 1증가하면서 타이틀과 내용을 mysql에서 레코드한다
+    const content = req.body.title;
+
+    const sqlQuery=
+"INSERT INTO BOARD (BOARD_TITLE, BOARD_CONTENT, REGISTER_ID) VALUES (?, ?, '황쌤')"
+db.query(sqlQuery,[title, content],(err, result) => {
+    res.send(result);
+})
+
+})
+
 
 
 /*서버가 생겼는지 테스트  로컬호스트에 접속할때 실행하는대로 확인되는지 

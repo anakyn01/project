@@ -26,17 +26,17 @@ onCheckboxChange: (checked: boolean, id: string) => void;
 }) =>{
     return(
         <tr>
-<td>
+<td className="d-flex justify-content-center align-items-center">
 <input type="checkbox" 
 className="form-check" 
 value={id} 
 onChange={(e) => onCheckboxChange(e.currentTarget.checked, e.currentTarget.value)}
 />
     </td>
-<td>{id}</td>
+<td className="text-center">{id}</td>
 <td>{title}</td>
-<td>{registerId}</td>
-<td>{registerDate}</td>           
+<td className="text-center">{registerId}</td>
+<td className="text-center">{registerDate}</td>           
         </tr>
     );
 };
@@ -114,9 +114,9 @@ getList();를 다시호출 합니다
 <h1 className="my-5 text-secondary text-bold">BBS</h1>                    
 <Table striped bordered hover>
     <colgroup>
-<col style={{width:"10%"}}/>
-<col style={{width:"10%"}}/>
-<col style={{width:"60%"}}/>
+<col style={{width:"5%"}}/>
+<col style={{width:"5%"}}/>
+<col style={{width:"70%"}}/>
 <col style={{width:"10%"}}/>
 <col style={{width:"10%"}}/>
     </colgroup>

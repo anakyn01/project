@@ -32,7 +32,7 @@ class BoardList extends Component{
     };
     //2) getList 라는 함수로 api리스트를 얻음 get현재만들어져 있는 값을 리턴 비동기
     getList = () => {
-        Axios.get("http://localhost:9700/list", {})
+        Axios.get("http://localhost:8080/list", {})
         .then((res) => {
             const {data} = res;
             this.setState({

@@ -5,7 +5,7 @@ const app = express();
 //상수앱은 변수 익스프레스를 대입
 const mysql = require("mysql");
 //상수 mysql은 mysql모듈을 사용하겠다는 의미
-const PORT = process.env.port || 9700;
+const PORT = process.env.port || 8080;
 //상수 포트는 포트넘버를 8000번으로 설정
 const bodyParser = require("body-parser");
 

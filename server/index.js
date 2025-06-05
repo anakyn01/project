@@ -32,15 +32,65 @@ app.listen(PORT, () =>{
 })
 
 //list
-app.get("/list", (req, res) => {
+/*app.get("/list", (req, res) => {
+        // 쿼리 파라미터에서 page와 limit 받기, 기본값 설정
+    const page = parseInt(req.query.page) || 1;      // 현재 페이지, 기본 1
+    const limit = parseInt(req.query.limit) || 10;   // 한 페이지당 데이터 개수, 기본 10
+    const offset = (page - 1) * limit;                // 건너뛸 행 수
+    
     //명령문 실행
-    const sqlQuery = 
-    "select BOARD_ID, BOARD_TITLE, REGISTER_ID, DATE_FORMAT(REGISTER_DATE, '%Y-%m-%d') AS REGISTER_DATE FROM BOARD;";
+
+    const sqlQuery = `
+        SELECT BOARD_ID, BOARD_TITLE, REGISTER_ID, DATE_FORMAT(REGISTER_DATE, '%Y-%m-%d') AS REGISTER_DATE
+        FROM BOARD
+        ORDER BY BOARD_ID DESC
+        LIMIT ? OFFSET ?;
+    `;
+
+    //const sqlQuery = 
+    //"select BOARD_ID, BOARD_TITLE, REGISTER_ID, DATE_FORMAT(REGISTER_DATE, '%Y-%m-%d') AS REGISTER_DATE FROM BOARD;";
     db.query(sqlQuery, (err, result) =>{
         res.send(result);
     })
 
-})
+})*/
+app.get("/list", (req, res) => {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.size) || 10;
+    const offset = (page - 1) * limit;
+
+    // 게시글 목록 가져오기
+    const sqlQuery = `
+      SELECT BOARD_ID, BOARD_TITLE, REGISTER_ID, DATE_FORMAT(REGISTER_DATE, '%Y-%m-%d') AS REGISTER_DATE
+      FROM BOARD
+      ORDER BY BOARD_ID DESC
+      LIMIT ? OFFSET ?;
+    `;
+
+    // 총 게시글 수 구하기
+    const countQuery = `SELECT COUNT(*) AS totalCount FROM BOARD;`;
+
+    db.query(countQuery, (err, countResult) => {
+        if(err){
+            res.status(500).json({ error: "카운트 조회 실패" });
+            return;
+        }
+
+        const totalCount = countResult[0].totalCount;
+
+        db.query(sqlQuery, [limit, offset], (err, listResult) => {
+            if(err){
+                res.status(500).json({ error: "목록 조회 실패" });
+                return;
+            }
+
+            res.json({
+                data: listResult,
+                totalCount: totalCount,
+            });
+        });
+    });
+});
 
 //read
 app.post("/detail", (req, res) => {

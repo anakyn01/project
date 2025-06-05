@@ -65,10 +65,53 @@ app.post("/insert",(req, res) => {
 "INSERT INTO BOARD (BOARD_TITLE, BOARD_CONTENT, REGISTER_ID) VALUES (?, ?, '황쌤')"
 db.query(sqlQuery,[title, content],(err, result) => {
     res.send(result);
-})
+});
+});
 
-})
+//update 수정
+app.post("/update", (req, res) =>{
+    const id = req.body.id; //상수 id는 내가 수정하려 요청한 id
+    const title = req.body.title;
+    const content = req.body.content;
 
+    const sqlQuery =
+"UPDATE BOARD SET BOARD_TITLE = ?, BOARD_CONTENT = ?, UPDATER_ID='황쌤' WHERE BOARD_ID=?;";
+db.query(sqlQuery,[title,content,id],(err, result) =>{
+    //에러를 처리할 경우
+    if(err){
+        console.error("데이터베이스 수정중 에러발생", err);
+        return res.status(500).send("내부오류이거나 오타가 발생함")
+    }
+    res.send(result);
+});
+});
+
+//delete 삭제
+app.post("/delete", (req, res) =>{
+    const id = req.body.boardIdList; 
+    //글을 삭제할때는 순번을 눌러서 삭제
+
+    if(!Array.isArray(idList) || idList.length === 0){
+//boardIdList 가 배열인지 확인 배열이 비어 있지 않은지도 확인
+        return res.status(400).send("Invalid boardIdList");
+        //유효하지 않은 경우 400 bad Request응답을 리턴
+    }
+
+    const placeholders = idList.map(() => '?').join(',');
+    //idList.length만큼에 ?를 만들어 쿼리에 바인딩
+
+    const sqlQuery =
+`DELETE FROM BOARD WHERE BOARD_ID IN (${placeholders})`;
+//sql인젝션을 방지하고 사용자 입력이 직접 문자열로 삽입되지 않고 안전하게 파라미터로 처리
+db.query(sqlQuery,idList,(err, result) =>{
+    //에러를 처리할 경우
+    if(err){
+        console.error("데이터베이스 삭제중 에러발생", err);
+        return res.status(500).send("내부오류이거나 오타가 발생함")
+    }
+    res.send(result);
+});
+});
 
 
 /*서버가 생겼는지 테스트  로컬호스트에 접속할때 실행하는대로 확인되는지 

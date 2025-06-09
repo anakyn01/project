@@ -92,6 +92,39 @@ Axios.get(`http://localhost:8080/list?page=${page}&size=${pageSize}`)
 
     };
 
+const handleDelete = () => {
+    //선택을 안되었을때 경고창
+    if (checkList.length === 0) {
+        alert("삭제할 게시글을 선택하세요");
+        return;
+    }
+    //체크된 항목들의 id리스트
+    const boardIdList = checkList.map((v) => `'${v}'`).join(",");
+    /*
+    checkList : 체크된 항목들의 ID리스트(예:[1,2,3])
+    map((v) => : 각  ID를 '1' '2' '3'처럼 문자열로 감쌉니다
+    .join(",") : 위에 것들을 쉼표로 이어 '1' ,'2' ,'3' 형태의 문자열로 만듭니다
+    결과 '1' ,'2' ,'3'
+    위에 사항은 백앤드에서 sql in ('1','2','3')형식으로 사용할때 자주 사용됩니다
+    지정된 여러 값 중하나라도 일치하는 경우를 찾기 위해 사용됩니다
+    */
+    Axios.post("http://localhost:8080/delete",{
+        boardIdList,
+    }).then(() =>{
+        //Promise객체와 함께 사용되며 비동기 작업이 성공적으로 완료된후 실행할 작업을 정의할때 사용됩니다
+alert("삭제가 완료 되었습니다");
+getList(currentPage);//현재페이지의 리스트를 다시 불러옴(갱신)
+setCheckList([]);//체크리스트 초기화(사용자가 선택했던 항목들을 해제)
+    }).catch((e) =>{
+        console.error("삭제 오류:", e);
+        alert("삭제 중 오류가 발생했습니다");
+    })
+    /*
+    http://localhost:8080/delete 로컬개발 서버에서 삭제 API
+    boardIdList를 body에 포함시켜 전송 {"boardIdList":'1','2','3'"}
+    */
+}
+
     //체크박스 상태를 관리하기 위한 함수 checked현재 체크박스가 체크되었는지 여부 T or f
     const onCheckboxChange = (checked: boolean, id: string) =>{
         //체크박스의 상태가 바뀔대 호출
@@ -208,7 +241,10 @@ getList();를 다시호출 합니다
         >
             수정하기
         </Button>
-        <Button variant="outline-danger">
+        <Button 
+        variant="outline-danger"
+        onClick={handleDelete}
+        >
             삭제
         </Button>
         </ButtonGroup>

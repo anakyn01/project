@@ -99,7 +99,8 @@ const handleDelete = () => {
         return;
     }
     //체크된 항목들의 id리스트
-    const boardIdList = checkList.map((v) => `'${v}'`).join(",");
+   // const boardIdList = checkList.map((v) => `'${v}'`).join(",");
+   const boardIdList = checkList.map((v) => Number(v));
     /*
     checkList : 체크된 항목들의 ID리스트(예:[1,2,3])
     map((v) => : 각  ID를 '1' '2' '3'처럼 문자열로 감쌉니다

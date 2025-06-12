@@ -151,6 +151,7 @@ app.post("/delete", (req, res) =>{
     //idList.length만큼에 ?를 만들어 쿼리에 바인딩
 
     const sqlQuery =
+//`DELETE FROM BOARD WHERE BOARD_ID IN (${id})`;
 `DELETE FROM BOARD WHERE BOARD_ID IN (${placeholders})`;
 //sql인젝션을 방지하고 사용자 입력이 직접 문자열로 삽입되지 않고 안전하게 파라미터로 처리
 db.query(sqlQuery,idList,(err, result) =>{
